@@ -1,0 +1,204 @@
+<My_Layout>:
+    BoxLayout:
+        orientation : 'vertical'
+        size: root.width, root.height
+
+        MDLabel:
+            text: str(root.text)
+            font_size: int(root.font_size)
+            theme_text_color: "Custom"
+            text_color: 210/255, 212/255, 212/255, 1
+            size_hint: 1,0.3
+            font_name: 'Roboto-Thin.ttf'
+            halign:'right'
+            
+        GridLayout:
+            cols : 4
+            spacing : 0.5
+            row_force_default:True
+            row_default_height:85
+            
+
+            MDFlatButton:
+                text:'AC'
+                size_hint: 0.24, 0.1
+                md_bg_color: 190/255, 192/255, 192/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                font_name: 'Roboto-Thin.ttf'
+                on_release: root.all_clear()
+
+            MDFlatButton:
+                text:'C'
+                size_hint: 0.24, 0.1
+                md_bg_color: 190/255, 192/255, 192/255, 1
+                font_size:40
+                text_color: 0,0,0,1
+                font_name: 'Roboto-Thin.ttf'
+                on_release: root.clear()
+
+            MDFlatButton:
+                text:'%'
+                size_hint: 0.24, 0.1
+                md_bg_color: 190/255, 192/255, 192/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                font_name: 'Roboto-Thin.ttf'
+                on_release : root.operation('%')
+
+            MDFlatButton:
+                text:'÷'
+                size_hint: 0.24, 0.1
+                md_bg_color: 0/255, 149/255, 255/255, 1
+                font_size:40
+                text_color: 1, 1, 1, 1
+                on_release : root.operation('÷')
+                font_name: 'Roboto-Thin.ttf'
+
+
+            MDFlatButton:
+                text:'7'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(7)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'8'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(8)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'9'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(9)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'×'
+                size_hint: 0.24, 0.1
+                md_bg_color: 0/255, 149/255, 255/255, 1
+                font_size:40
+                text_color: 1, 1, 1, 1
+                on_release : root.operation('×')
+                font_name: 'Roboto-Thin.ttf'
+
+
+            MDFlatButton:
+                text:'4'
+                size_hint: 0.24, 0.1
+                md_bg_color:210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(4)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'5'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(5)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'6'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color:28/255, 28/255, 28/255, 1
+                on_release : root.press(6)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'−'
+                size_hint: 0.24, 0.1
+                md_bg_color: 0/255, 149/255, 255/255, 1
+                font_size:40
+                text_color: 1, 1, 1, 1
+                on_release : root.operation('−')
+                font_name: 'Roboto-Thin.ttf'
+
+            
+            MDFlatButton:
+                text:'1'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(1)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'2'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 0, 0, 0, 1
+                on_release : root.press(2)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'3'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(3)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'+'
+                size_hint: 0.24, 0.1
+                md_bg_color: 0/255, 149/255, 255/255, 1
+                font_size:40
+                text_color: 1,1,1, 1
+                on_release : root.operation('+')
+                font_name: 'Roboto-Thin.ttf'
+
+        
+            MDFlatButton:
+                text:'00'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press_zero()
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'0'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color: 28/255, 28/255, 28/255, 1
+                on_release : root.press(0)
+                font_name: 'Roboto-Thin.ttf'
+
+            MDFlatButton:
+                text:'.'
+                size_hint: 0.24, 0.1
+                md_bg_color: 210/255, 212/255, 212/255, 1
+                font_size:40
+                text_color:28/255, 28/255, 28/255, 1
+                font_name: 'Roboto-Thin.ttf'
+                on_release : root.decimal()
+
+            MDFlatButton:
+                text:'='
+                size_hint: 0.24, 0.1
+                md_bg_color: 0/255, 149/255, 255/255, 1
+                font_size:40
+                text_color: 1, 1, 1, 1
+                on_release : root.equal()
+                font_name: 'Roboto-Thin.ttf'
